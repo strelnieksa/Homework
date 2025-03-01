@@ -15,7 +15,6 @@ header('Content-Type: application/json');
 final class DeleteUserByInvalidIdCest
 {
 
-
     public function tryToDeleteUserByInvalidId(ApiTester $I): void
     {
         $auth = base64_encode('admin:P@ssw0rd');
