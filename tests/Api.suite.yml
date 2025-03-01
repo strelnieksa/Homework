@@ -1,0 +1,14 @@
+actor: ApiTester
+suite_namespace: Tests\Api
+modules:
+  enabled:
+    - Db:
+        dsn: 'sqlite:database/database.sqlite'
+        user: ''
+        password: ''
+        cleanup: true
+        populate: true
+    - REST:
+        url: 'http://localhost:8080'
+        depends: PhpBrowser
+    - Asserts
