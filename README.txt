@@ -2,30 +2,31 @@ Mintos Homework - CRUD API Testing Setup
 
 Prerequisites
 
-PHP (Check with php -v)
+PHP (Check with: "php -v")
 *Download & install from: https://www.php.net/downloads or use https://www.apachefriends.org/download.html
-*For macOS recommended: brew install php
+*For macOS recommended: "brew install php"
 
-Composer (Check with composer -V)
+Composer (Check with: "composer -V")
 *Download from: https://getcomposer.org/
 
-Git (for cloning the repo, check with git --version)
+Git (for cloning the repo, check with: "git --version")
 *Download from: https://git-scm.com/downloads
 
-Codeception (Check with codecept --version)
-*Install using Composer: composer global require codeception/codeception
+Codeception (Check with: "codecept --version")
+*Install using Composer: "composer global require codeception/codeception"
 *If there are some problems with codeception installation via composer in php.ini file uncomment ;extension=zip
 
 
 Setup Instructions
 
-Clone the Repository to project folder: git clone https://github.com/strelnieksa/Mintos-Homework.git
+*Clone the Repository to project folder: "git clone https://github.com/strelnieksa/Mintos-Homework.git"
+    *Repository URL: https://github.com/strelnieksa/Mintos-Homework.git
 *Open the project in your preferred IDE (Example: VS Code(Install extensions: PHP Intelephense, PHP Debug), PhpStorm) 
 
 Running API Tests for CRUD operations---
-*Open a terminal window and navigate to the root directory of your project. Start a PHP built-in web server: php -S localhost:8080 -t public
-*Open a new terminal window or tab (do not close the one running the PHP server) and run the following command to execute the API tests: vendor/bin/codecept run Api
-*Or use command: php vendor/bin/codecept run Api if vendor/bin/codecept is not executable or your system restricts direct script execution
+*Open a terminal window and navigate to the root directory of your project. Start a PHP built-in web server: "php -S localhost:8080 -t public"
+*Open a new terminal window or tab (do not close the one running the PHP server) and run the following command to execute the API tests: "vendor/bin/codecept run Api"
+*Or use command: "php vendor/bin/codecept run Api" if "vendor/bin/codecept run Api" is not executable or your system restricts direct script execution
 
 Results
 *Test results are written into database.sqlite file
