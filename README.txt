@@ -25,6 +25,7 @@ Clone the Repository to project folder: git clone https://github.com/strelnieksa
 Running API Tests for CRUD operations---
 *Open a terminal window and navigate to the root directory of your project. Start a PHP built-in web server: php -S localhost:8080 -t public
 *Open a new terminal window or tab (do not close the one running the PHP server) and run the following command to execute the API tests: vendor/bin/codecept run Api
+*Or use command: php vendor/bin/codecept run Api if vendor/bin/codecept is not executable or your system restricts direct script execution
 
 Results
 *Test results are written into database.sqlite file
